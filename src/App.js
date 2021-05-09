@@ -1,20 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
+import Header from "./components/Header";
 import axios from "axios";
 
 function App() {
-
-  const generateActivity = async () => {
-    const response = await axios.get(
-      `http://www.boredapi.com/api/activity`
+  const [activity, setActivity] = useState();
+  const getActivity = async () => {
+    const activityQueryResult = await axios.get(
+      `http://www.boredapi.com/api/activity/`
     );
-    console.log(response);
-    console.log(response.data);
+    setActivity(activityQueryResult.data.activity);
   };
 
   return (
     <div className="App">
-      <button onClick={() => generateActivity()}>test this</button>
+      <Header />
+      <button onClick={() => getActivity()}>Generate</button>
+      {activity ? (
+        <div>
+          <h1>Your random activity</h1>
+          <p>{activity}</p>
+        </div>
+      ) : (
+        ""
+      )}
     </div>
   );
 }
