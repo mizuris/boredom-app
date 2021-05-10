@@ -1,0 +1,37 @@
+.activity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.activity-heading {
+  margin-bottom: 40px;
+}
+
+.activity-heading > p {
+  font-size: 12px;
+  font-weight: 200;
+}
+
+.activity-misc {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.activity-misc > div {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+    margin-right: 8px;
+}
