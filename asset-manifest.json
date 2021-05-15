@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/github.io/boredom-app/static/css/main.f5556aa6.chunk.css",
-    "main.js": "/github.io/boredom-app/static/js/main.4f13a593.chunk.js",
-    "main.js.map": "/github.io/boredom-app/static/js/main.4f13a593.chunk.js.map",
-    "runtime-main.js": "/github.io/boredom-app/static/js/runtime-main.e36366b8.js",
-    "runtime-main.js.map": "/github.io/boredom-app/static/js/runtime-main.e36366b8.js.map",
-    "static/js/2.10b1c781.chunk.js": "/github.io/boredom-app/static/js/2.10b1c781.chunk.js",
-    "static/js/2.10b1c781.chunk.js.map": "/github.io/boredom-app/static/js/2.10b1c781.chunk.js.map",
-    "index.html": "/github.io/boredom-app/index.html",
-    "static/css/main.f5556aa6.chunk.css.map": "/github.io/boredom-app/static/css/main.f5556aa6.chunk.css.map",
-    "static/js/2.10b1c781.chunk.js.LICENSE.txt": "/github.io/boredom-app/static/js/2.10b1c781.chunk.js.LICENSE.txt"
+    "main.css": "/boredom-app/static/css/main.f5556aa6.chunk.css",
+    "main.js": "/boredom-app/static/js/main.4f13a593.chunk.js",
+    "main.js.map": "/boredom-app/static/js/main.4f13a593.chunk.js.map",
+    "runtime-main.js": "/boredom-app/static/js/runtime-main.f213ce41.js",
+    "runtime-main.js.map": "/boredom-app/static/js/runtime-main.f213ce41.js.map",
+    "static/js/2.10b1c781.chunk.js": "/boredom-app/static/js/2.10b1c781.chunk.js",
+    "static/js/2.10b1c781.chunk.js.map": "/boredom-app/static/js/2.10b1c781.chunk.js.map",
+    "index.html": "/boredom-app/index.html",
+    "static/css/main.f5556aa6.chunk.css.map": "/boredom-app/static/css/main.f5556aa6.chunk.css.map",
+    "static/js/2.10b1c781.chunk.js.LICENSE.txt": "/boredom-app/static/js/2.10b1c781.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.e36366b8.js",
+    "static/js/runtime-main.f213ce41.js",
     "static/js/2.10b1c781.chunk.js",
     "static/css/main.f5556aa6.chunk.css",
     "static/js/main.4f13a593.chunk.js"
