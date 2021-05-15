@@ -1,30 +1,17 @@
 import React, { useState } from "react";
 import Header from "./components/Header/Header";
-import axios from "axios";
+import GeneratorButton from "./components/GeneratorButton/GeneratorButton";
 import Activity from "./components/Activity/Activity";
-// import Footer from "./components/Footer/Footer";
-import * as GiIcons from "react-icons/gi";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [activity, setActivity] = useState();
-
-  const getActivity = async () => {
-    const activityQueryResult = await axios.get(
-      `http://www.boredapi.com/api/activity`
-    );
-    setActivity(activityQueryResult.data);
-  };
-
   return (
     <div className="App">
       <Header />
-      <button className="generator-button" onClick={() => getActivity()}>
-        <span>
-          <GiIcons.GiCrosshair className="generator-button-icon" />
-          Kill boredom
-        </span>
-      </button>
+      <GeneratorButton activityHandler={setActivity} />
       {activity ? <Activity activity={activity} /> : ""}
+      <Footer />
     </div>
   );
 }

@@ -1,22 +1,10 @@
 .guide {
   width: 100%;
-  height: 100%;
+  min-height: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-}
-
-.guide-icon {
-  animation: grow 4s ease forwards infinite;
-  display: inherit;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  border-radius: 50%;
-  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
-  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
 .guide-content {
@@ -28,12 +16,20 @@
   color: black;
   transform: translate(-50%, -50%);
   width: 100%;
-  height: 100%;
-  overflow: scroll;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .guide-inner {
   padding: 20px;
+
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .guide-inner > ul {
@@ -41,8 +37,15 @@
   text-align: left;
 }
 
-.guide-inner > h3, li {
-  margin-bottom: 5px
+.guide-inner > h2,
+li {
+  margin-bottom: 8px;
+}
+
+.guide-slogan {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 12px;
+  user-select: none;
 }
 
 @keyframes grow {

@@ -1,15 +1,29 @@
 .activity {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
   width: 80%;
+  min-height: 320px;
   margin: 0 auto;
   border: 1px solid white;
   border-radius: 20px;
-  padding: 30px;
-  position: relative;
-  min-height: 290px;
+  padding: 20px;
+}
+
+.guide-icon {
+  cursor: pointer;
+  animation: grow 4s ease forwards infinite;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.activity-content {
+  margin: auto 0;
 }
 
 .activity-heading {
@@ -24,7 +38,7 @@
 .activity-misc {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -33,13 +47,20 @@
   align-items: center;
 }
 
-.icon {
-    margin-right: 10px;
+.activity-icon {
+  margin-right: 10px;
+}
+
+.bg-light {
+  background: white;
+}
+
+.close-icon {
+  color: black;
 }
 
 @media screen and (min-width: 992px) {
   .activity {
     width: 40%;
-    height: 300px;
   }
 }

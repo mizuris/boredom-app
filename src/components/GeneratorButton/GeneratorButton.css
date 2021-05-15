@@ -1,0 +1,17 @@
+.generator-button {
+  margin: 50px auto;
+  padding: 10px;
+  border: 1px solid white;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms ease-in-out all;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.generator-button:hover {
+  background: white;
+  color: black;
+}
