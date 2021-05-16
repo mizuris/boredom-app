@@ -63,4 +63,8 @@
   .activity {
     width: 40%;
   }
+
+  .activity-misc > div {
+    font-size: 16px;
+  }
 }
