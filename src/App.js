@@ -6,10 +6,14 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   const [activity, setActivity] = useState();
+  const activityHandler = (res) => {
+    setActivity(res);
+  };
+
   return (
     <div className="App">
       <Header />
-      <GeneratorButton activityHandler={setActivity} />
+      <GeneratorButton activityHandler={activityHandler} />
       {activity ? <Activity activity={activity} /> : ""}
       <Footer />
     </div>

@@ -1,14 +1,16 @@
 import React from "react";
-import axios from "axios";
 import * as GiIcons from "react-icons/gi";
 
 function GeneratorButton({ activityHandler }) {
   const getActivity = async () => {
-    const activityQueryResult = await axios
-      .get(`http://www.boredapi.com/api/activity`)
-      .then((resp) => activityHandler(resp.data))
-      .catch((err) => console.log(err));
-    return activityQueryResult;
+    const response = await fetch("http://www.boredapi.com/api/activity");
+
+    if (response.status === 200) {
+      await response
+        .json()
+        .catch((err) => console.log(err))
+        .then((data) => activityHandler(data));
+    }
   };
 
   return (
